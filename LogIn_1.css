@@ -1,0 +1,69 @@
+/* Set styles for the main container */
+.main {
+	position: relative;
+  }
+  
+  /* Set styles for the login container */
+  .login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #eee;
+	border-radius: 60% / 10%;
+	height: 460px;
+	width: 400px;
+	padding: 50px;
+	box-sizing: border-box;
+	transition: .8s ease-in-out;
+  }
+  
+  /* Set styles for the login label */
+  .login label {
+	color: #0366a8;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(.6);
+	transition: .8s ease-in-out;
+	pointer-events: none;
+  }
+  
+  /* Set styles for the login inputs and button */
+  .login input,
+  .login button {
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	border: none;
+	border-radius: 20px;
+	box-sizing: border-box;
+	font-size: 16px;
+  }
+  
+  .login button {
+	background: #0366a8;
+	color: #fff;
+	font-weight: bold;
+  }
+  
+  /* Set styles for the checkbox */
+  #chk {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: none;
+  }
+  
+  /* Set styles for the checked checkbox */
+  #chk:checked ~ .login {
+	transform: translateY(-500px) scale(1);
+  }
+  
+  #chk:checked ~ .login label {
+	transform: translate(-50%, -400%) scale(5);
+  }
+  
